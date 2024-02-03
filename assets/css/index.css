@@ -33,7 +33,8 @@ body{
 }
 html{
     scroll-behavior: smooth;
-    cursor: url("../images/cursor.png") 35 35, move;
+    cursor: url("../images/") 35 35, move;
+    cursor:default;
 }
 
 
@@ -81,7 +82,7 @@ header nav ul li a{
     font-weight: 700;
     line-height: normal;
     text-decoration-line: underline;
-    background: #fff;
+    background: transparent !important;
 }
 /* -------------logo---------
 -------- */
@@ -140,7 +141,7 @@ header nav ul li a{
     font-size: 4vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 7vw;
+    line-height: 120%;
     text-transform: uppercase;
     margin-top: -6vw;
     
@@ -217,6 +218,7 @@ header nav ul li a{
 }
 .half .box2{
     width: 60%;
+    position: relative;
 }
 .half .box3{
     width: 20%;
@@ -234,7 +236,10 @@ header nav ul li a{
     gap: 2vw;
 }
 .half .box2 img{
-    width: 3vw;
+    width: 10vw;
+    position: absolute;
+    right: -13vw;
+    bottom: -3vw;
 }
 
 .half .box3 img{
@@ -273,6 +278,10 @@ header nav ul li a{
     width: 40%;
 }
 
+.htb .right img {
+    width: 140%;
+}
+
 .htb h4{
     color: #FFF;
     font-family: Times New Roman;
@@ -285,10 +294,10 @@ header nav ul li a{
 .htb ol li{
     color: #0FF;
     font-family: Times New Roman;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 2.5vw;
+    line-height: 120%;
 }
 
 
@@ -306,11 +315,11 @@ header nav ul li a{
     align-items: center;
 }
 .tokenomics .left{
-    width: 50%;
+    width: 60%;
 }
 .tokenomics .right{
-    width: 50%;
-    text-align: center;
+    width: 40%;
+    text-align: left;
 }
 .tokenomics .right img{
     width: 80%;
@@ -327,16 +336,38 @@ header nav ul li a{
 .tokenomics ol li{
     color: #0FF;
     font-family: Times New Roman;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5vw;
+    line-height: 120%;
     gap: 2vw;
     list-style: none;
+}
+
+.tokenomics .divide {
+    margin-top: 2vw;
 }
 .tokenomics ol:not(:last-child){
     margin-bottom: 3vw;
 }
+
+/*--------------- new-img --------------
+----------*/
+
+.new-img {
+    width: 100%;
+    height: auto;
+    padding: 5vw 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.new-img img {
+    width: 100%;
+}
+
 /* --------------iframe---------
 ------ */
 .iframe{
@@ -676,9 +707,9 @@ header nav ul li a{
         font-size: 4vw;
         font-style: normal;
         font-weight: 500;
-        line-height: 7vw;
+        line-height: 120%;
         text-transform: uppercase;
-        margin-top: -6vw;
+        margin-top: -1vw;
         
     }
     .welcome a{
@@ -776,7 +807,9 @@ header nav ul li a{
         gap: 2vw;
     }
     .half .box2 img{
-        width: 10vw;
+        width: 15vw;
+        right: 0;
+        bottom: -10vw;
     }
     
     .half .box3 img{
@@ -812,6 +845,10 @@ header nav ul li a{
 
     .htb .right {
         width: 80%;
+    }
+
+    .htb .right img {
+        width: 100%;
     }
 
     .htb h4{
@@ -878,6 +915,11 @@ header nav ul li a{
     .tokenomics ol:not(:last-child){
         margin-bottom: 3vw;
     }
+
+    .new-img {
+        gap: 5vw;
+    }
+
     /* --------------iframe---------
     ------ */
     .iframe{
